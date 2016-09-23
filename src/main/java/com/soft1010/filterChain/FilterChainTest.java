@@ -20,7 +20,7 @@ public class FilterChainTest {
         request.setRequest("source");
         Response response = new Response();
 
-        filterChain.doFilter(request,response,filterChain);
+        filterChain.doFilter(request,response);
         System.out.println(response.getResponse());
     }
 

@@ -11,6 +11,6 @@ public class TestFilter2 implements Filter {
     public void doFiler(Request request, Response response, FilterChain filterChain) {
         System.out.println("testFilter2------");
         response.setResponse(response.getResponse()+" | test2");
-        filterChain.doFilter(request,response,filterChain);
+        filterChain.doFilter(request,response);
     }
 }
